@@ -19,7 +19,8 @@ app.use(cookieParser())
 app.use(express.json())
 
 app.use(cors({
-    origin:"*"
+    origin:"https://blog-mern-2gkk.vercel.app",
+    credentials:true,
 }));
 
 // route setup  
