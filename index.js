@@ -30,10 +30,6 @@ app.use('/api/category', CategoryRoute)
 app.use('/api/blog', BlogRoute)
 app.use('/api/comment', CommentRouote)
 app.use('/api/blog-like', BlogLikeRoute)
-app.use((req, res) => {
-    res.status(404).json({ success: false, message: "Route not found" });
-});
-
 
 
 mongoose.connect(process.env.MONGODB_CONN, { dbName: 'yt-mern-blog' })
